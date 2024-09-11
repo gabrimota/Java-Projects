@@ -18,13 +18,13 @@ public class Ex3 {
 		String div = "/";
 		// criamos o scanner aqui(ele recebe o que o usuario digita)
 		Scanner scanner = new Scanner(System.in);
-		
+		// pedimos os números utlizando o print e guardamos nas variaveis num e num2
 		System.out.print("Digite o primeiro número: ");
 			num = scanner.nextInt();
 
 		System.out.print("Digite o segundo número: ");
 			num2 = scanner.nextInt();	
-			
+		// pedimos o sinal da operação e guardamos na var sinal
 		System.out.print("Digite o sinal da operação: ");
 			sinal = scanner.next();
 			
