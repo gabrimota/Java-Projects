@@ -16,7 +16,7 @@ public class Ex3 {
 		String sub = "-";
 		String mult= "*";
 		String div = "/";
-		
+		// criamos o scanner aqui(ele recebe o que o usuario digita)
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Digite o primeiro número: ");
