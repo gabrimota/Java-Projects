@@ -6,7 +6,9 @@ public class Ex3 {
 	/*Crie um programa que receba 2 números e um operador (+, -. *,/) e faça a respectiva operação.*/
 
 	public static void main(String[] args) {
+		// variaveis inteiras
 		int num , num2 , somas;
+		// variaveis strings criada para guardar os sinal de cada operação
 		String sinal;
 		String soma = "+";
 		String sub = "-";
