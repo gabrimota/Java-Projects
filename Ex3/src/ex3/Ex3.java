@@ -9,7 +9,9 @@ public class Ex3 {
 		// variaveis inteiras
 		int num , num2 , somas;
 		// variaveis strings criada para guardar os sinal de cada operação
+		 // essa var sinal recebe o sinal que o usuario quer utilizar na operação
 		String sinal;
+		// já esses abaixo são usados para comprar com a var sinal para sabermos qual operação fazer
 		String soma = "+";
 		String sub = "-";
 		String mult= "*";
