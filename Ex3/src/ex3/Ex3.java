@@ -1,5 +1,5 @@
 package ex3;
-
+// importação do scanner para utilizar ele
 import java.util.Scanner;
 
 public class Ex3 {
