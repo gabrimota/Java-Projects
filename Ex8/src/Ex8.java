@@ -20,7 +20,8 @@ public class Ex8 {
 				
 				fahrenheit = (float) (celsius * 1.8 + 32);
 					System.out.printf("A temperatura é %.0f Fahrenheit" , fahrenheit);
-			break;
+						
+					break;
 		case 2:
 			System.out.println("Conversor de Fahrenheit para Celsius");
 			System.out.print("Digite a temperatura em Fahrenheit: ");
@@ -28,7 +29,7 @@ public class Ex8 {
 				
 				celsius = (float) ((float) (fahrenheit - 32) / 1.8);
 					System.out.printf("A temperatura é %.0f Celsius" , celsius);
-			
+					break;
 		
 		
 		} 
