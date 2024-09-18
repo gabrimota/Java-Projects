@@ -19,22 +19,27 @@ public class Main {
         System.out.print("Digite seu salário: ");
         // Utilizando o scanner para recebermos oque o usuario digitar, guardamos o valor digitado na var salario
             salario = scanner.nextDouble();
-        System.out.print("Digite sua nota: ");
-            nota = scanner.nextInt();
+            System.out.print("Digite sua nota: ");
+                nota = scanner.nextInt();
 
             if( nota <=1){
                 System.out.println("O seu salário continua o mesmo!");
 
             } else if(nota <= 2 ){
                 aumento = (salario * 0.05);
-                System.out.println("Aumento de 5%");
-                System.out.printf("R$%.2f", salario + aumento);
+                 System.out.println("Aumento de 5%");
+                    System.out.printf("R$%.2f", salario + aumento);
 
             } else if( nota <= 3){
-                aumento = (salario * 0.1);
-                System.out.println("Aumento de 10%");
-                System.out.printf("R$%.2f", salario + aumento);
+                aumento = (salario * 0.10);
+                  System.out.println("Aumento de 10%");
+                        System.out.printf("R$%.2f", salario + aumento);
             }
+             else if( nota <= 4){
+              aumento = (salario * 0.15);
+                System.out.println("Aumento de 10%");
+                    System.out.printf("R$%.2f", salario + aumento);
+        }
 
 
     }
