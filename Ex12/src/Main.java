@@ -37,8 +37,13 @@ public class Main {
             }
              else if( nota <= 4){
               aumento = (salario * 0.15);
-                System.out.println("Aumento de 10%");
+                System.out.println("Aumento de 15%");
                     System.out.printf("R$%.2f", salario + aumento);
+        }
+             else if( nota <= 5){
+            aumento = (salario * 0.2);
+             System.out.println("Aumento de 20%");
+                System.out.printf("R$%.2f", salario + aumento);
         }
 
 
