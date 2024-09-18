@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Main {
@@ -25,12 +25,12 @@ public class Main {
             if( nota <=1){
                 System.out.println("O seu salário continua o mesmo!");
 
-            } else if(nota <=2 ){
+            } else if(nota <= 2 ){
                 aumento = (salario * 0.05);
                 System.out.println("Aumento de 5%");
                 System.out.printf("R$%.2f", salario + aumento);
 
-            } else if( nota <=3){
+            } else if( nota <= 3){
                 aumento = (salario * 0.1);
                 System.out.println("Aumento de 10%");
                 System.out.printf("R$%.2f", salario + aumento);
