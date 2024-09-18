@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -15,10 +16,10 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite seu salário: ");
+        System.out.print("Digite seu salário: ");
         // Utilizando o scanner para recebermos oque o usuario digitar, guardamos o valor digitado na var salario
             salario = scanner.nextDouble();
-        System.out.println("Digite sua nota: ");
+        System.out.print("Digite sua nota: ");
             nota = scanner.nextInt();
 
             if( nota <=1){
@@ -27,8 +28,12 @@ public class Main {
             } else if(nota <=2 ){
                 aumento = (salario * 0.05);
                 System.out.println("Aumento de 5%");
-                System.out.printf("%f", salario + aumento);
+                System.out.printf("R$%.2f", salario + aumento);
 
+            } else if( nota <=3){
+                aumento = (salario * 0.1);
+                System.out.println("Aumento de 10%");
+                System.out.printf("R$%.2f", salario + aumento);
             }
 
 
