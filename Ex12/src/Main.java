@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class Main {
-    /*
+    /* Ex12
         Faça um programa que receba seu salario (double) e uma nota entre 1 a 5.
     Se o valor da nota for igual abaixo de 1, o salario permanece o mesmo.
     Se o valor da nota for entre 2, o salario tem um aumento de 5%
