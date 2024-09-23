@@ -48,7 +48,9 @@ public class Main {
             aumento = (salario * 0.2);
              System.out.println("Aumento de 20%");
                 System.out.printf("R$%.2f", salario + aumento);
-        }
+        } else if( nota > 5){
+
+            }
 
 
     }
