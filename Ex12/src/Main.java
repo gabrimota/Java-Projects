@@ -49,7 +49,7 @@ public class Main {
              System.out.println("Aumento de 20%");
                 System.out.printf("R$%.2f", salario + aumento);
         } else if( nota > 5){
-
+            System.out.println("Está");
             }
 
 
