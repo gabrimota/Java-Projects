@@ -4,4 +4,19 @@ public class Garrafa {
     String modelo;
     float tamanho;
     boolean aberta;
+
+    void abrir() {
+
+    }
+
+    void fechar() {
+
+    }
+
+    void encher(){
+
+    }
+    void esvaziar(){
+
+    }
 }
