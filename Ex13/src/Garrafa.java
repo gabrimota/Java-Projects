@@ -7,37 +7,39 @@ public class Garrafa {
     boolean cheio;
 
     void abrir() {
-        if ( aberta = true ){
+        if (this.aberta == true) {
             System.out.println("A garrafa já esta aberta");
-        }
+        } else
 
-        this.aberta = true;
-        System.out.printf("Abrindo!");
+            this.aberta = true;
+        System.out.print("Abrindo!");
     }
 
     void fechar() {
-        if (aberta = false ){
-            System.out.printf("A garrafa já esta fechada");
-        }
-        this.aberta= false;
-        System.out.printf("Fechando!");
+        if (aberta == false) {
+            System.out.println("A garrafa já esta fechada");
+        } else
+            this.aberta = false;
+        System.out.print("Fechando!");
     }
 
-    void encher(){
-        if (this.aberta = false){
+    void encher() {
+        if (aberta == false) {
 
-            System.out.printf("Abra a garrafa primeiro!");
-        }
+            System.out.println("Abra a garrafa primeiro!");
+        } else
 
-        this.cheio = true;
-        System.out.printf("A garrafa foi enchida!!");
+            this.cheio = true;
+        System.out.print("A garrafa foi enchida!!");
 
     }
-    void esvaziar(){
-        if( cheio = false ){
-            System.out.printf("Não é possivel esvaziar uma garrafa vazia!");
+
+    void esvaziar() {
+        if (cheio == false) {
+            System.out.println("Não é possivel esvaziar uma garrafa vazia!");
+        } else {
+            this.cheio = false;
+            System.out.print("A garrafa foi esvaziada!!");
         }
-        this.cheio = false;
-        System.out.printf("A garrafa foi esvaziada!!");
     }
 }
