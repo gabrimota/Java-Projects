@@ -8,8 +8,7 @@ public class Main {
         garrafa.cheio = false;
         garrafa.modelo = "plastico";
 
-        garrafa.fechar();
-        garrafa.encher();
+
 
 
     }

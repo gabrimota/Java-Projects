@@ -7,11 +7,20 @@ public class Garrafa {
     boolean cheio;
 
     void abrir() {
+        if ( aberta = true ){
+            System.out.println("A garrafa já esta aberta");
+        }
+
         this.aberta = true;
+        System.out.printf("Abrindo!");
     }
 
     void fechar() {
+        if (aberta = false ){
+            System.out.printf("A garrafa já esta fechada");
+        }
         this.aberta= false;
+        System.out.printf("Fechando!");
     }
 
     void encher(){
