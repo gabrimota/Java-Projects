@@ -6,17 +6,17 @@ public class Garrafa {
     boolean aberta;
     boolean cheio;
     void abrir() {
-
+        this.aberta = true;
     }
 
     void fechar() {
-
+        this.aberta= true;
     }
 
     void encher(){
-
+        this.cheio = true;
     }
     void esvaziar(){
-
+        this.cheio = false;
     }
 }

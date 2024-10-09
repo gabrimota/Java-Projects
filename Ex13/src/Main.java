@@ -7,7 +7,7 @@ public class Main {
         garrafa.tamanho = 20;
         garrafa.cheio = false;
         garrafa.modelo = "plastico";
-        garrafa.aberta = false;
+        garrafa.abrir();
 
 
     }
