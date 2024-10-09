@@ -48,7 +48,7 @@ public class Main {
              System.out.println("Aumento de 20%");
                 System.out.printf("R$%.2f", salario + aumento);
         } if( nota > 5.0){
-            System.out.println("Não é possivel ter uma nota maior do que 5");
+            System.out.println("Não é possivel ter uma nota maior do que 5.");
             }
 
 
