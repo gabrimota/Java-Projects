@@ -4,7 +4,7 @@ public class Garrafa {
     String modelo;
     float tamanho;
     boolean aberta;
-
+    boolean cheio;
     void abrir() {
 
     }
