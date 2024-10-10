@@ -6,8 +6,10 @@ public class Caneta {
     float ponta;
     boolean tampada;
     String carga;
-// criamos metodos(funções) para utilizarmos no main.java, essas funções podem ter ações como mostrar o status
-//  da caneta ou destampar ela, rabiscar , escrever.
+
+/* criamos metodos(funções) para utilizarmos no main.java, essas funções podem ter ações como mostrar o status
+ da caneta ou destampar ela, rabiscar , escrever. */
+
     void status(){
       System.out.println("Marca: " + this.marca);
       System.out.println("Cor: " + this.cor);
