@@ -7,4 +7,12 @@ public class Caneta {
     boolean tampada;
     float carga;
 
+  void status(){
+      System.out.println("Modelo: " + modelo);
+      System.out.println("Cor: " + cor);
+      System.out.println("Ponta: " + ponta);
+      System.out.println("Tampada: " + tampada);
+      System.out.println("Carga: " + carga);
+
+  }
 }
