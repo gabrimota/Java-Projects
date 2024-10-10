@@ -1,6 +1,6 @@
 public class Garrafaa {
-    String cor;
-    String marca;
+    public String cor;
+    public String marca;
     String modelo;
     float tamanho;
     boolean aberta;
