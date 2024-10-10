@@ -1,12 +1,12 @@
 public class Garrafaa {
     public String cor;
     public String marca;
-    String modelo;
-    float tamanho;
-    boolean aberta;
-    boolean cheio;
+    public String modelo;
+    public float tamanho;
+    private boolean aberta;
+    private boolean cheio;
 
-    void abrir() {
+   public void abrir() {
         if (this.aberta == true) {
             System.out.println("A garrafa já esta aberta");
         } else
@@ -15,7 +15,7 @@ public class Garrafaa {
         System.out.print("Abrindo!");
     }
 
-    void fechar() {
+    public void fechar() {
         if (aberta == false) {
             System.out.println("A garrafa já esta fechada");
         } else
@@ -23,7 +23,7 @@ public class Garrafaa {
         System.out.print("Fechando!");
     }
 
-    void encher() {
+     protected  encher() {
         if (aberta == false) {
 
             System.out.println("Abra a garrafa primeiro!");
@@ -34,7 +34,7 @@ public class Garrafaa {
 
     }
 
-    void esvaziar() {
+     protected  esvaziar() {
         if (cheio == false) {
             System.out.println("Não é possivel esvaziar uma garrafa vazia!");
         } else {
