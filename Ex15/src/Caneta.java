@@ -27,7 +27,7 @@ public class Caneta {
         System.out.println("Caneta tampada");
    }
   void rabiscar(){
-        if( this.tampada == true) {
+        if( this.tampada ) {
             System.out.println("Destampe primeiro");
         } else {
             System.out.println("rabiscando");
