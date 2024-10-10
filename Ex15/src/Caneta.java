@@ -5,7 +5,7 @@ public class Caneta {
     String cor;
     float ponta;
     boolean tampada;
-    float carga;
+    String carga;
 
   public void status(){
       System.out.println("Modelo: " + marca);
