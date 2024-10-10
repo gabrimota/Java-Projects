@@ -6,13 +6,30 @@ public class Caneta {
     float ponta;
     boolean tampada;
     String carga;
+// criamos metodos(funções) para utilizarmos no main.java, essas funções podem ter ações como mostrar o status
+//  da caneta ou destampar ela, rabiscar , escrever.
+    void status(){
+      System.out.println("Marca: " + this.marca);
+      System.out.println("Cor: " + this.cor);
+      System.out.println("Ponta: " + this.ponta);
+      System.out.println("Tampada: " + this.tampada);
+      System.out.println("Carga: " + this.carga);
 
-  public void status(){
-      System.out.println("Modelo: " + marca);
-      System.out.println("Cor: " + cor);
-      System.out.println("Ponta: " + ponta);
-      System.out.println("Tampada: " + tampada);
-      System.out.println("Carga: " + carga);
+  } 
+   void destampar() {
+        this.tampada = false;
+       System.out.println("Caneta destampada");
+   }
+   void tampar(){
+        this.tampada = true;
+        System.out.println("Caneta tampada");
+   }
+  void rabiscar(){
+        if( this.tampada == true) {
+            System.out.println("Destampe primeiro");
+        } else {
+            System.out.println("rabiscando");
+        }
 
-  }
+    }
 }
