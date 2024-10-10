@@ -15,7 +15,7 @@ public class Caneta {
       System.out.println("Tampada: " + this.tampada);
       System.out.println("Carga: " + this.carga);
 
-  } 
+  }
    void destampar() {
         this.tampada = false;
        System.out.println("Caneta destampada");
