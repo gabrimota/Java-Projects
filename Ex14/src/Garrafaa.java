@@ -23,7 +23,7 @@ public class Garrafaa {
         System.out.print("Fechando!");
     }
 
-     protected  encher() {
+     public void encher() {
         if (aberta == false) {
 
             System.out.println("Abra a garrafa primeiro!");
@@ -34,7 +34,7 @@ public class Garrafaa {
 
     }
 
-     protected  esvaziar() {
+     public void esvaziar() {
         if (cheio == false) {
             System.out.println("Não é possivel esvaziar uma garrafa vazia!");
         } else {
