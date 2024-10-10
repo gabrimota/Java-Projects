@@ -8,6 +8,9 @@ public class Main {
             caneta.carga = "47%";
             caneta.tampada = true;
 
+            caneta.tampar();
+             caneta.destampar();
             caneta.status();
+            caneta.rabiscar();
     }
 }
