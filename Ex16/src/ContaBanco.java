@@ -14,17 +14,20 @@ public class ContaBanco {
             System.out.println("Status: " + this.status);
         }
         public void abrirConta(String tipo) {
+            this.status = true;
+//            Temos 2 tipos de conta()
             this.tipo = tipo;
         }
         public void fecharConta() {
-
+            this.status = false;
         }
         public void depositar(float valor) {
-            this.saldo += valor;
+
         }
         public void sacar(float valor) {
-            if (this.saldo >= valor) {
-                this.saldo -= valor;
-            }
+
+        }
+        public void  pagarMensal(){
+
         }
 }
