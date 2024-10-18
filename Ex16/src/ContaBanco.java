@@ -22,10 +22,12 @@ public class ContaBanco {
             this.status = false;
         }
         public void depositar(float valor) {
-
+                this.saldo += valor;
         }
         public void sacar(float valor) {
-
+            if( this.saldo <  valor){
+                System.out.println("Saldo insuficiente");
+            }
         }
         public void  pagarMensal(){
 
