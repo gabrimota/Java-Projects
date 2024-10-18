@@ -32,7 +32,13 @@ public class ContaBanco {
                 System.out.println("Saque concluido com sucesso!");
             }
         }
-        public void  pagarMensal(){
-
+        public void  pagarMensal( int dia , float valorMensal ){
+            valorMensal = 300;
+            if( dia == 30){
+                if(this.saldo > valorMensal){
+                    System.out.printf("Saldo Insuficiente! Você está devendo %d", valorMensal);
+                }
+                this.saldo -= valorMensal;
+            }
         }
 }
