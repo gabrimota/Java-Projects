@@ -4,7 +4,7 @@ public class ContaBanco {
         private String dono;
         private float saldo;
         private boolean status;
-
+   // funçaõ criada para ver cada inf da conta
         public void StatusContaBanco() {
             System.out.println("Status da Conta");
             System.out.println("Conta: " + this.numConta);
@@ -13,14 +13,17 @@ public class ContaBanco {
             System.out.println("Saldo: " + this.saldo);
             System.out.println("Status: " + this.status);
         }
+//         Função criada para abrir a conta do usuário
         public void abrirConta(String tipo) {
             this.status = true;
 //            Temos 2 tipos de conta()
             this.tipo = tipo;
         }
+//        Função craida para fechar conta do user
         public void fecharConta() {
             this.status = false;
         }
+//
         public void depositar(float valor) {
                 this.saldo += valor;
         }
@@ -36,7 +39,7 @@ public class ContaBanco {
             valorMensal = 300;
             if( dia == 30){
                 if(this.saldo > valorMensal){
-                    System.out.printf("Saldo Insuficiente! Você está devendo %d", valorMensal);
+                    System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensal );
                 }
                 this.saldo -= valorMensal;
             }
