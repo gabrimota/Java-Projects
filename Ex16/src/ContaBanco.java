@@ -13,4 +13,18 @@ public class ContaBanco {
             System.out.println("Saldo: " + this.saldo);
             System.out.println("Status: " + this.status);
         }
+        public void abrirConta(String tipo) {
+            this.tipo = tipo;
+        }
+        public void fecharConta() {
+
+        }
+        public void depositar(float valor) {
+            this.saldo += valor;
+        }
+        public void sacar(float valor) {
+            if (this.saldo >= valor) {
+                this.saldo -= valor;
+            }
+        }
 }
