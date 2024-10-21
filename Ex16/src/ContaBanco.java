@@ -95,11 +95,13 @@ public class ContaBanco {
         }
 
         public void sacar(float valor) {
+            if (getStatus()) {
             if( this.saldo <  valor){
                 System.out.println("Saldo insuficiente!");
             } else{
                 this.saldo -= valor;
                 System.out.println("Saque concluido com sucesso!");
+            }
             }
         }
 
