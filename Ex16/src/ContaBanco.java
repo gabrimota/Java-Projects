@@ -64,8 +64,8 @@ public class ContaBanco {
 
 //         Função criada para abrir a conta do usuário
         public void abrirConta(String t) {
-            setStatus(true);
-            setTipo(t);
+            this.setStatus(true);
+            this.setTipo(t);
 /*          Temos 2 tipos de conta(Corrente CC ou Poupança CP)
             A conta corrente começa com 50 mangos*/
             if( t.equals("CC")){
@@ -88,14 +88,14 @@ public class ContaBanco {
 //
         public void depositar(float valor) {
             // verifica se o staus é verdadeiro , se for ele adiciona o saldo
-            if (getStatus()) {
+            if (this.getStatus()) {
                 this.saldo += valor;
             }
 
         }
 
         public void sacar(float valor) {
-            if (getStatus()) {
+            if (this.getStatus()) {
             if( this.saldo <  valor){
                 System.out.println("Saldo insuficiente!");
             } else{
