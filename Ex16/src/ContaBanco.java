@@ -57,8 +57,12 @@ public class ContaBanco {
 //         Função criada para abrir a conta do usuário
         public void abrirConta(String tipo) {
             this.status = true;
-//            Temos 2 tipos de conta()
-            this.tipo = tipo;
+//            Temos 2 tipos de conta(Corrente ou Poupança)
+            if( this.tipo.equals("Corrente")){
+                this.saldo += 50;
+            } else if( this.tipo.equals("Poupança")){
+                this.saldo += 150;
+            }
         }
 //        Função craida para fechar conta do user
         public void fecharConta() {
