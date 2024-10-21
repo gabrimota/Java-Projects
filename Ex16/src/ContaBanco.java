@@ -13,6 +13,13 @@ public class ContaBanco {
             System.out.println("Saldo: " + this.saldo);
             System.out.println("Status: " + this.status);
         }
+        public void conta( int nu, String t, String d, float s, boolean st) {
+            this.numConta = nu;
+            this.tipo = t;
+            this.dono = d;
+            this.saldo = s;
+            this.status = st;
+        }
 //         Função criada para abrir a conta do usuário
         public void abrirConta(String tipo) {
             this.status = true;
@@ -43,5 +50,9 @@ public class ContaBanco {
                 }
                 this.saldo -= valorMensal;
             }
+        }
+
+        public void getNumConta(){
+
         }
 }
