@@ -20,6 +20,13 @@ public class ContaBanco {
     public int getNumConta(){
         return numConta;
     }
+    public void setTipo(String t) {
+            tipo = t;
+    }
+    public String getTipo(){
+            return tipo;
+    }
+    
 
 //    public void conta(int nu, String t, String d, float s, boolean st) {
 //            this.numConta = nu;
