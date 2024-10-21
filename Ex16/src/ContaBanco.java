@@ -78,11 +78,20 @@ public class ContaBanco {
         }
 //        Função craida para fechar conta do user
         public void fecharConta() {
-            this.status = false;
+            if (this.saldo > 0) {
+                System.out.println("Ainda há saldo, favor retirar para fechar a conta!");
+            } else if ( this.saldo < 0) {
+                System.out.println("Ainda há dividas, favor pagar para fechar a conta!");
+            } setStatus(false);
+
         }
 //
         public void depositar(float valor) {
+            // verifica se o staus é verdadeiro , se for ele adiciona o saldo
+            if (getStatus()) {
                 this.saldo += valor;
+            }
+
         }
 
         public void sacar(float valor) {
