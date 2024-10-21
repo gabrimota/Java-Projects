@@ -105,14 +105,21 @@ public class ContaBanco {
             }
         }
 
-        public void  pagarMensal( int dia , float valorMensal ){
-            valorMensal = 300;
+        public void  pagarMensal( int dia , float valorMensalCC , float valorMensalCP ){
+            valorMensalCC = 30;
+            valorMensalCP = 20;
             dia = 30;
-            if( dia == 30){
-                if(this.saldo > valorMensal){
-                    System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensal );
+
+            if( dia == 30 && this.tipo.equals("CC")){
+                if(this.saldo < valorMensalCC){
+                    System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensalCC );
                 }
-                this.saldo -= valorMensal;
+                this.saldo -= valorMensalCC;
+                
+            } else if( dia == 20 && this.tipo.equals("CP")){
+                if(this.saldo < valorMensalCP){
+                    System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensalCP );
+                }  this.saldo -= valorMensalCP;
             }
         }
 
