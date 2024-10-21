@@ -17,6 +17,9 @@ public class ContaBanco {
     public void setNumConta(int n) {
        numConta = n;
     }
+    public int getNumConta(){
+        return numConta;
+    }
 
 //    public void conta(int nu, String t, String d, float s, boolean st) {
 //            this.numConta = nu;
@@ -57,7 +60,5 @@ public class ContaBanco {
             }
         }
 
-        public void getNumConta(){
 
-        }
 }
