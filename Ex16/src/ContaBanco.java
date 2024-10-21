@@ -115,7 +115,7 @@ public class ContaBanco {
                     System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensalCC );
                 }
                 this.saldo -= valorMensalCC;
-                
+
             } else if( dia == 20 && this.tipo.equals("CP")){
                 if(this.saldo < valorMensalCP){
                     System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensalCP );
