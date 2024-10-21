@@ -43,6 +43,12 @@ public class ContaBanco {
     public float getSaldo(){
             return saldo;
     }
+    public void setStatus(boolean s){
+            status = s;
+    }
+    public boolean getStatus(){
+            return status;
+    }
 
 
 /*
@@ -57,14 +63,16 @@ public class ContaBanco {
 */
 
 //         Função criada para abrir a conta do usuário
-        public void abrirConta(String tipo) {
-            this.status = true;
-//            Temos 2 tipos de conta(Corrente ou Poupança)
-//            A conta corrente começa com 50 mangos
-            if( this.tipo.equals("Corrente")){
+        public void abrirConta(String t) {
+            setStatus(true);
+            setTipo(t);
+/*          Temos 2 tipos de conta(Corrente CC ou Poupança CP)
+            A conta corrente começa com 50 mangos*/
+            if( t.equals("CC")){
                 this.saldo += 50;
+
 //             A conta poupança começa com 150 mangos
-            } else if( this.tipo.equals("Poupança")){
+            } else if( t.equals("CP")){
                 this.saldo += 150;
             }
         }
@@ -76,6 +84,7 @@ public class ContaBanco {
         public void depositar(float valor) {
                 this.saldo += valor;
         }
+
         public void sacar(float valor) {
             if( this.saldo <  valor){
                 System.out.println("Saldo insuficiente!");
@@ -84,6 +93,7 @@ public class ContaBanco {
                 System.out.println("Saque concluido com sucesso!");
             }
         }
+
         public void  pagarMensal( int dia , float valorMensal ){
             valorMensal = 300;
             if( dia == 30){
