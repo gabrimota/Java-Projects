@@ -73,7 +73,7 @@ public class ContaBanco {
 
 //             A conta poupança começa com 150 mangos
             } else if( t.equals("CP")){
-                this.saldo += 150;
+                this.setSaldo(150);
             }
         }
 //        Função craida para fechar conta do user
