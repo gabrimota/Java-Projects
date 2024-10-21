@@ -18,7 +18,7 @@ public class ContaBanco {
             saldo = 0;
             status = false;
     }
-
+//    Abaixo temos tds setters e getters do nosso objeto
     public void setNumConta(int n) {
        numConta = n;
     }
