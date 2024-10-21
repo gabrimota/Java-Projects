@@ -107,6 +107,7 @@ public class ContaBanco {
 
         public void  pagarMensal( int dia , float valorMensal ){
             valorMensal = 300;
+            dia = 30;
             if( dia == 30){
                 if(this.saldo > valorMensal){
                     System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensal );
