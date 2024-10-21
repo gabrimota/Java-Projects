@@ -69,7 +69,7 @@ public class ContaBanco {
 /*          Temos 2 tipos de conta(Corrente CC ou Poupança CP)
             A conta corrente começa com 50 mangos*/
             if( t.equals("CC")){
-                this.saldo += 50;
+                this.setSaldo(50);
 
 //             A conta poupança começa com 150 mangos
             } else if( t.equals("CP")){
