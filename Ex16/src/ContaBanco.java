@@ -14,6 +14,11 @@ public class ContaBanco {
             System.out.println("Status: " + this.status);
         }
 
+    public void construtor(){
+            saldo = 0;
+            status = false;
+    }
+
     public void setNumConta(int n) {
        numConta = n;
     }
@@ -26,7 +31,20 @@ public class ContaBanco {
     public String getTipo(){
             return tipo;
     }
-    
+    public void setDono(String d){
+            dono = d;
+    }
+    public String getDono(){
+            return dono;
+    }
+    public void setSaldo(float s){
+            saldo = s;
+    }
+    public float getSaldo(){
+            return saldo;
+    }
+
+
 
 //    public void conta(int nu, String t, String d, float s, boolean st) {
 //            this.numConta = nu;
