@@ -13,7 +13,7 @@ public class ContaBanco {
             System.out.println("Saldo: " + this.saldo);
             System.out.println("Status: " + this.status);
         }
-
+//    Sempre que finalizarmos uma conta vamos chamar essa função
     public void construtor(){
             saldo = 0;
             status = false;
@@ -45,15 +45,17 @@ public class ContaBanco {
     }
 
 
+/*
+    Testando setters todos juntos
+    public void conta(int nu, String t, String d, float s, boolean st) {
+            this.numConta = nu;
+            this.tipo = t;
+            this.dono = d;
+            this.saldo = s;
+            this.status = st;
+        }
+*/
 
-//    public void conta(int nu, String t, String d, float s, boolean st) {
-//            this.numConta = nu;
-//            this.tipo = t;
-//            this.dono = d;
-//            this.saldo = s;
-//            this.status = st;
-//        }
-//
 //         Função criada para abrir a conta do usuário
         public void abrirConta(String tipo) {
             this.status = true;
