@@ -58,8 +58,10 @@ public class ContaBanco {
         public void abrirConta(String tipo) {
             this.status = true;
 //            Temos 2 tipos de conta(Corrente ou Poupança)
+//            A conta corrente começa com 50 mangos
             if( this.tipo.equals("Corrente")){
                 this.saldo += 50;
+//             A conta poupança começa com 150 mangos
             } else if( this.tipo.equals("Poupança")){
                 this.saldo += 150;
             }
