@@ -105,7 +105,12 @@ public class ContaBanco {
             if( this.saldo <  valor){
                 System.out.println("Saldo insuficiente!");
             } else{
+//                mesmo esquema do outro, aqui nós acessamos diretamente no atributo
                 this.saldo -= valor;
+//                aqui acessamos o setter e o getter
+                /*Utilizamos o setSaldo para enviarmos o novo valor de saldo, pegamos o valor de saldo utilizando
+                 o getSaldo e tiramos dele o valor que a pessoa vai sacar
+                        */
                 this.setSaldo(this.getSaldo() - valor);
                 System.out.println("Saque concluido com sucesso!");
             }
