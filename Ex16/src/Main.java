@@ -7,7 +7,9 @@ public class Main {
         conta1.depositar(100);
         conta1.StatusContaBanco();
         conta1.sacar(100);
+
         System.out.println("");
+
         ContaBanco conta2 = new ContaBanco();
         conta2.setDono("Silva");
         conta2.setNumConta(3333);
