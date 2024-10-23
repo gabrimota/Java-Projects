@@ -83,7 +83,7 @@ public class ContaBanco {
             } else if ( this.saldo < 0) {
                 System.out.println("Ainda há dividas, favor pagar para fechar a conta!");
             } setStatus(false);
-
+            System.out.println("Conta fechada com sucesso!");
         }
 //
         public void depositar(float valor) {
