@@ -105,6 +105,7 @@ public class ContaBanco {
             if( this.saldo <  valor){
                 System.out.println("Saldo insuficiente!");
             } else{
+                this.saldo -= valor;
                 this.setSaldo(this.getSaldo() - valor);
                 System.out.println("Saque concluido com sucesso!");
             }
