@@ -15,6 +15,9 @@ public class Main {
         conta2.depositar(300);
         conta2.StatusContaBanco();
 
+// ctrl + enter envia o commit e o push sem precisar clicar
+// ctrl + / comentario ctrl + shift + / comentarios grandes
+// ctrl + backspace apaga tudo atrás
 
 
     }
