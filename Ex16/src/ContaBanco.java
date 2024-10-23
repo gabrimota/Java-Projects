@@ -96,7 +96,7 @@ public class ContaBanco {
 //               Essa é a maneira mais indicada
                 this.setSaldo(this.getSaldo() + valor);
                 System.out.println("Deposito Realizado com sucesso!");
-            }
+            } else System.out.println("Impossivel depositar em uma conta não aberta!");
 
         }
 
