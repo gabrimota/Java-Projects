@@ -102,6 +102,7 @@ public class ContaBanco {
 
         public void sacar(float valor) {
             if (this.getStatus()) {
+//               Podemos utilizar o this.saldo no if tbm
             if( this.getSaldo() <  valor){
                 System.out.println("Saldo insuficiente!");
             } else{
