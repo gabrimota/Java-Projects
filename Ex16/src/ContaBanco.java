@@ -125,15 +125,15 @@ public class ContaBanco {
 
 
             if( dia == 30 && this.tipo.equals("CC")){
-                if(this.saldo < valorMensalCC){
+                if(this.getSaldo() < valorMensalCC){
                     System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensalCC );
                 }
-                this.saldo -= valorMensalCC;
+                this.setSaldo(this.getSaldo() - valorMensalCC ) ;
 
             } else if(dia == 30 && this.tipo.equals("CP")){
-                if(this.saldo < valorMensalCP){
+                if(this.getSaldo() < valorMensalCP){
                     System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensalCP );
-                }  this.saldo -= valorMensalCP;
+                }  this.setSaldo(this.getSaldo() - valorMensalCP ) ;
             }
             /* temos essas 2 formas no if(como sempre dia = 30 nesse programa então o proprio intelijei deu essa forma de se fazer)
             else if( dia == 30 && this.tipo.equals("CP")){
