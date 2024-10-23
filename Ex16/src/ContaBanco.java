@@ -115,6 +115,7 @@ public class ContaBanco {
                 System.out.println("Saque concluido com sucesso!");
             }
             }
+            System.out.println("Impossível sacar dinheiro sem ter uma conta aberta!");
         }
 
         public void  pagarMensal( int dia , float valorMensalCC , float valorMensalCP ){
