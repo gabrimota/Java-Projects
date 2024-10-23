@@ -6,6 +6,7 @@ public class Main {
         conta1.fecharConta();
         conta1.depositar(200);
         conta1.sacar(100);
+        conta1.sacar(50);
 
     }
 }
