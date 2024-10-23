@@ -87,9 +87,13 @@ public class ContaBanco {
         }
 //
         public void depositar(float valor) {
-            // verifica se o staus é verdadeiro , se for ele adiciona o saldo
+//             verifica se o staus é verdadeiro , se for ele adiciona o saldo
             if (this.getStatus()) {
+//                 dessa maneira ele mexe diretamento nos atributos
                 this.saldo += valor;
+//                 dessa maneira ele mexe diretamente nos métodos especiais que seriam os setters/getters
+//               Essa é a maneira mais indicada
+                this.setSaldo(this.getSaldo() + valor);
             }
 
         }
