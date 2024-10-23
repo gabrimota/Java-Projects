@@ -102,7 +102,7 @@ public class ContaBanco {
 
         public void sacar(float valor) {
             if (this.getStatus()) {
-            if( this.saldo <  valor){
+            if( this.getSaldo() <  valor){
                 System.out.println("Saldo insuficiente!");
             } else{
 //                mesmo esquema do outro, aqui nós acessamos diretamente no atributo
