@@ -119,10 +119,10 @@ public class ContaBanco {
             System.out.println("Impossível sacar dinheiro sem ter uma conta aberta!");
         }
 
-        public void  pagarMensal( int dia , float valorMensalCC , float valorMensalCP ){
-            valorMensalCC = 30;
-            valorMensalCP = 20;
-            dia = 30;
+        public void  pagarMensal( int dia ){
+            float valorMensalCC = 30;
+            float valorMensalCP = 20;
+
 
             if( dia == 30 && this.tipo.equals("CC")){
                 if(this.saldo < valorMensalCC){
@@ -130,7 +130,7 @@ public class ContaBanco {
                 }
                 this.saldo -= valorMensalCC;
 
-            } else if(this.tipo.equals("CP")){
+            } else if(dia == 30 && this.tipo.equals("CP")){
                 if(this.saldo < valorMensalCP){
                     System.out.println("Saldo Insuficiente! Você está devendo R$" + valorMensalCP );
                 }  this.saldo -= valorMensalCP;
