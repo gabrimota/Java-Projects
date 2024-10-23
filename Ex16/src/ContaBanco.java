@@ -113,7 +113,7 @@ public class ContaBanco {
                 this.setSaldo(this.getSaldo() - valor);
                 System.out.println("Saque concluido com sucesso!");
             }
-            } else{ System.out.println("Impossível sacar dinheiro sem ter uma conta aberta!"); }
+            } else  System.out.println("Impossível sacar dinheiro sem ter uma conta aberta!");
 
         }
 
