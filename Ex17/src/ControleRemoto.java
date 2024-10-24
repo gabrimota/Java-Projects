@@ -28,7 +28,7 @@ public class ControleRemoto implements Controle {
         return tocando;
     }
 // metodos abstratos
-
+// Override = sobescrever(este metodo existia no Controle.java porém não tinha nada nele, e agora estamos escrevendo por cima daquele outro código)
     @Override
     public void ligar() {
         this.SetLigado(true);
