@@ -36,7 +36,9 @@ public class ControleRemoto implements Controle {
 
     @Override
     public void abrirMenu() {
+        if(this.GetLigado()){
 
+        }
     }
 
     @Override
