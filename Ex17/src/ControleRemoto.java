@@ -1,4 +1,4 @@
-public class ControleRemoto {
+public class ControleRemoto implements Controle {
 //    Atributos
     private int volume;
     private boolean ligado;
@@ -23,5 +23,55 @@ public class ControleRemoto {
         return tocando;
     }
 // metodos abstratos
+
+    @Override
+    public void ligar() {
+
+    }
+
+    @Override
+    public void desligar() {
+
+    }
+
+    @Override
+    public void abrirMenu() {
+
+    }
+
+    @Override
+    public void fecharMenu() {
+
+    }
+
+    @Override
+    public void maisVolume() {
+
+    }
+
+    @Override
+    public void menosVolume() {
+
+    }
+
+    @Override
+    public void ligarMudo() {
+
+    }
+
+    @Override
+    public void desligarMudo() {
+
+    }
+
+    @Override
+    public void play() {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
 
 }
