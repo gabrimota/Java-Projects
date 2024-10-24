@@ -1,6 +1,8 @@
 //essa aqui seria a interface do controle (a parte vísivel dele onde temos os botões)
 //uma interface não tem atributos, apenas metódos
 //eu errei no nome(deveria ser controlador)
+// todos métodos na interface devem ser públicos
+// além de que eles são todos abstratos ( )
 public class Controle {
 
     public void ligar(){
