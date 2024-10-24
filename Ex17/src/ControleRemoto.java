@@ -26,12 +26,12 @@ public class ControleRemoto implements Controle {
 
     @Override
     public void ligar() {
-
+        this.SetLigado(true);
     }
 
     @Override
     public void desligar() {
-
+        this.SetLigado(false);
     }
 
     @Override
