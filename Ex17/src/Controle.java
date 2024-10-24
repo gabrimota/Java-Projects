@@ -1,4 +1,5 @@
-//essa aqui seria a interface do controle (a parte vísivel dele ontem temos os botões)
+//essa aqui seria a interface do controle (a parte vísivel dele onde temos os botões)
+//uma interface não tem atributos, apenas metódos
 public class Controle {
 
     public void ligar(){
