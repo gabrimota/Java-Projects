@@ -22,5 +22,6 @@ public class ControleRemoto {
     private boolean GetTocando(){
         return tocando;
     }
+// metodos abstratos
 
 }
