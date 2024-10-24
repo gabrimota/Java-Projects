@@ -4,6 +4,11 @@ public class ControleRemoto implements Controle {
     private boolean ligado;
     private boolean tocando;
 //    Getters e Setters
+    public void Construtor(){
+        volume = 25;
+        ligado = false;
+        tocando = false;
+    }
     private void SetVolume(int volume) {
         this.volume = volume;
     }
@@ -37,7 +42,7 @@ public class ControleRemoto implements Controle {
     @Override
     public void abrirMenu() {
         if(this.GetLigado()){
-
+            this.GetTocando();
         }
     }
 
