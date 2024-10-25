@@ -44,7 +44,7 @@ public class ControleRemoto implements Controle {
         if(this.GetLigado()){
             System.out.println("Está ligado: " + this.GetLigado());
             System.out.println("Está tocando: " + this.GetTocando());
-
+            System.out.println("Volume: " + this.GetVolume());
         }
     }
 
