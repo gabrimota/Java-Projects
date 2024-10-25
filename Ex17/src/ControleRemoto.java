@@ -21,7 +21,7 @@ public class ControleRemoto implements Controle {
     private boolean GetLigado() {
         return ligado;
     }
-    private void tocando(boolean tocando){
+    private void SetTocando(boolean tocando){
         this.tocando = tocando;
     }
     private boolean GetTocando(){
@@ -43,7 +43,8 @@ public class ControleRemoto implements Controle {
     public void abrirMenu() {
         if(this.GetLigado()){
             System.out.println("Está ligado: " + this.GetLigado());
-            System.out.println();
+            System.out.println("Está tocando: " + this.GetTocando());
+
         }
     }
 
