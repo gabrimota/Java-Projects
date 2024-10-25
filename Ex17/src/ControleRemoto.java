@@ -45,17 +45,24 @@ public class ControleRemoto implements Controle {
             System.out.println("Está ligado: " + this.GetLigado());
             System.out.println("Está tocando: " + this.GetTocando());
             System.out.println("Volume: " + this.GetVolume());
+
+            for(int i =0; i <= this.GetVolume(); i+=10){
+                System.out.println("|");
+
+            }
         }
     }
 
     @Override
     public void fecharMenu() {
-
+        System.out.println("Fechando Menu...");
     }
 
     @Override
     public void maisVolume() {
-
+        if(this.GetLigado()){
+            this.SetVolume(this.GetVolume() + 10);
+        }
     }
 
     @Override
