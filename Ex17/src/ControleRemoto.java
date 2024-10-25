@@ -74,12 +74,16 @@ public class ControleRemoto implements Controle {
 
     @Override
     public void ligarMudo() {
-
+        if(this.GetLigado() && this.GetVolume() > 0){
+            this.SetVolume(0);
+        }
     }
 
     @Override
     public void desligarMudo() {
-
+            if(this.GetLigado() && this.GetVolume() == 0){
+                this.SetVolume(50);
+            }
     }
 
     @Override
