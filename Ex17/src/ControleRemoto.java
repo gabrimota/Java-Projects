@@ -67,7 +67,9 @@ public class ControleRemoto implements Controle {
 
     @Override
     public void menosVolume() {
-
+        if(this.GetLigado()){
+            this.SetVolume(this.GetVolume() - 1);
+        }
     }
 
     @Override
