@@ -90,6 +90,7 @@ public class ControleRemoto implements Controle {
     public void play() {
         if(this.GetLigado() && this.GetTocando()){
             this.SetTocando(true);
+            System.out.println("Tocando...");
         }
     }
 
