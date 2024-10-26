@@ -88,7 +88,7 @@ public class ControleRemoto implements Controle {
 
     @Override
     public void play() {
-        if(this.GetLigado() && this.GetTocando()){
+        if(this.GetLigado() && !(this.GetTocando())){
             this.SetTocando(true);
             System.out.println("Tocando...");
         }
