@@ -96,7 +96,10 @@ public class ControleRemoto implements Controle {
 
     @Override
     public void pause() {
-
+        if(this.GetLigado() && this.GetTocando()){
+            this.SetTocando(false);
+            System.out.println("Pausando...");
+        }
     }
 
 }
