@@ -42,6 +42,7 @@ public class ControleRemoto implements Controle {
     @Override
     public void abrirMenu() {
         if(this.GetLigado()){
+            System.out.println("----- Menu -----");
             System.out.println("Está ligado: " + this.GetLigado());
             System.out.println("Está tocando: " + this.GetTocando());
             System.out.println("Volume: " + this.GetVolume());
