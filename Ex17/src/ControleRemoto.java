@@ -48,7 +48,7 @@ public class ControleRemoto implements Controle {
             System.out.println("Volume: " + this.GetVolume());
 
             for(int i =0; i <= this.GetVolume(); i+=10){
-                System.out.println("|");
+                System.out.print("|");
 
             }
         }
