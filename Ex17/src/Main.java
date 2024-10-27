@@ -5,7 +5,7 @@ public class Main {
             controle1.Construtor();
             controle1.ligar();
             controle1.play();
-            controle1.maisVolume();
+
             controle1.abrirMenu();
 
     }
