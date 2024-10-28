@@ -94,15 +94,18 @@ public class Lutador {
 
     }
 
-    public void ganharLuta(){
-
+    public void ganharLuta(boolean LutaVitoria){
+            setVitorias(getVitorias() + 1);
+        System.out.println(getNome() + " venceuu a luta!");
     }
 
-    public void perderLutar(){
-
+    public void perderLutar(boolean LutaVitoria){
+            setDerrotas(getDerrotas() + 1);
+            System.out.println(getNome() + " perdeuu a luta!");
     }
 
     public void empatarLuta(){
-
+            setEmpates(getEmpates() + 1);
+            System.out.println(getNome() + " a luta foi umm empatee!");
     }
 }
