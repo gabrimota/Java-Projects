@@ -126,6 +126,6 @@ public class Lutador {
 
     public void empatarLuta(){
             setEmpates(getEmpates() + 1);
-            System.out.println(getNome() + " a luta foi umm empatee!");
+            System.out.println("De " + getNome() + " e " + getNome()  + " a luta foi umm empatee!");
     }
 }
