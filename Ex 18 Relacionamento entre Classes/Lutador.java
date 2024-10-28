@@ -8,4 +8,29 @@ public class Lutador {
     private int vitorias;
     private int derrotas;
     private int empates;
+
+    public void Apresentar(){
+
+    }
+    public void status(){
+
+    }
+    public void ganharLuta(){
+
+    }
+    public void prderLutar(){
+
+    }
+    public void empatarLuta(){
+
+    }
+
+
+
+
+
+
+
+
+
 }
