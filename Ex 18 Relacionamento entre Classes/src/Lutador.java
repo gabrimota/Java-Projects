@@ -77,12 +77,20 @@ public class Lutador {
 
     //    Métodos(Funções)
     public void Apresentar(){
-        System.out.println("Senhoras e Senhores!!! O lutador " + getNome() + " vai lutarr agora!!");
+        System.out.println("Senhoras e Senhores!!! O lutador " + getNome() + " vai lutarr agora da categoria " + getCategoria());
 
 
     }
 
     public void status(){
+        System.out.println("Nome: " + getNome());
+        System.out.println("Idade: " + getIdade());
+        System.out.println("Altura: " + getAltura());
+        System.out.println("Peso: " + getPeso());
+        System.out.println("Categoria: " + getCategoria());
+        System.out.println("Vitorias: " + getVitorias());
+        System.out.println("Derrotas: " + getDerrotas());
+        System.out.println("Empates: " + getEmpates());
 
     }
 
