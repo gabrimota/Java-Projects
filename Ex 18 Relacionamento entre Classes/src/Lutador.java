@@ -86,10 +86,20 @@ public class Lutador {
     }
 
     //    Métodos(Funções)
+
+    public void Construtor(String no, String na, int id, float al, float pe, String ca, int vi, int de , int em){
+        nome = no;
+        nacionalidade = na ;
+        idade = id;
+        altura = al;
+        categoria = ca;
+        vitorias = vi;
+        derrotas = de;
+        empates = em;
+    }
+
     public void Apresentar(){
         System.out.println("Senhoras e Senhores!!! O lutador " + getNome() + " vai lutarr agora da categoria " + getCategoria());
-
-
     }
 
     public void status(){
