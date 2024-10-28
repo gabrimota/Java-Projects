@@ -77,17 +77,23 @@ public class Lutador {
 
     //    Métodos(Funções)
     public void Apresentar(){
+        System.out.println("Senhoras e Senhores!!! O lutador " + getNome() + " vai lutarr agora!!");
+
 
     }
+
     public void status(){
 
     }
+
     public void ganharLuta(){
 
     }
-    public void prderLutar(){
+
+    public void perderLutar(){
 
     }
+
     public void empatarLuta(){
 
     }
