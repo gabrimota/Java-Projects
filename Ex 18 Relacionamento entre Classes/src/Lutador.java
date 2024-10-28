@@ -4,12 +4,12 @@ public class Lutador {
     private int idade;
     private float altura;
     private float peso;
-    private string categoria;
+    private String categoria;
     private int vitorias;
     private int derrotas;
     private int empates;
 
-//     Getters / Setters
+    //     Getters / Setters
     public int getIdade() {
         return idade;
     }
@@ -43,11 +43,11 @@ public class Lutador {
     }
 
     //    Métodos
-    public string getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(string categoria) {
+    public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
 
@@ -75,7 +75,7 @@ public class Lutador {
         this.empates = empates;
     }
 
-//    Métodos(Funções)
+    //    Métodos(Funções)
     public void Apresentar(){
 
     }
@@ -91,13 +91,4 @@ public class Lutador {
     public void empatarLuta(){
 
     }
-
-
-
-
-
-
-
-
-
 }
