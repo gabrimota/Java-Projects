@@ -1,15 +1,29 @@
 public class Lutador {
 
+    private String nome;
+    private int idade;
+    private float altura;
+    private float peso;
+    private string categoria;
+    private int vitorias;
+    private int derrotas;
+    private int empates;
+
+//     Getters / Setters
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
     }
 
     public float getAltura() {
@@ -28,7 +42,7 @@ public class Lutador {
         this.peso = peso;
     }
 
-//    Métodos
+    //    Métodos
     public string getCategoria() {
         return categoria;
     }
@@ -59,18 +73,6 @@ public class Lutador {
 
     public void setEmpates(int empates) {
         this.empates = empates;
-    }
-
-    private String nome;
-    private int idade;
-    private float altura;
-    private float peso;
-    private string categoria;
-    private int vitorias;
-    private int derrotas;
-    private int empates;
-    public int getIdade() {
-        return idade;
     }
 
 //    Métodos(Funções)
