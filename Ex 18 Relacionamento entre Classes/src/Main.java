@@ -4,7 +4,7 @@ public class Main {
 
         l[0] = new Lutador("Pretty Boy", "França", 31,1.75f,68.9f,11,2,1);
 
-
+        l[0].status();
 
     }
 }
