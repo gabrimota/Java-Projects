@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class Lutador {
 
     private String nome;
@@ -12,6 +10,18 @@ public class Lutador {
     private int derrotas;
     private int empates;
 
+
+    public Lutador(String no, String na, int id, float al, float pe,  int vi, int de , int em){
+        nome = no;
+        nacionalidade = na ;
+        idade = id;
+        altura = al;
+//        Podemos fazer dessas 2 maneiras
+        setPeso(pe);
+        vitorias = vi;
+        derrotas = de;
+        empates = em;
+    }
     //     Getters / Setters
 
     public int getIdade() {
@@ -100,18 +110,7 @@ public class Lutador {
 
     //    Métodos(Funções)
 
-    public void Construtor(String no, String na, int id, float al, float pe, String ca, int vi, int de , int em){
-        nome = no;
-        nacionalidade = na ;
-        idade = id;
-        altura = al;
-//        Podemos fazer dessas 2 maneiras
-        setPeso(pe);
-        categoria = ca;
-        vitorias = vi;
-        derrotas = de;
-        empates = em;
-    }
+
 
     public void Apresentar(){
         System.out.println("Senhoras e Senhores!!! O lutador " + this.getNome() + " vai lutarr agora da categoria " + this.getCategoria());

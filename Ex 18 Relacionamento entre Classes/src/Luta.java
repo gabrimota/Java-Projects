@@ -1,3 +1,4 @@
+/*
 public class Luta extends Lutador {
     private String desafiado;
     private String desafiante;
@@ -7,3 +8,4 @@ public class Luta extends Lutador {
 
     //
 }
+*/
