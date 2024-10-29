@@ -114,38 +114,39 @@ public class Lutador {
     }
 
     public void Apresentar(){
-        System.out.println("Senhoras e Senhores!!! O lutador " + getNome() + " vai lutarr agora da categoria " + getCategoria());
-        System.out.println("Ele vemmm do(a)" + getVitorias() );
-        System.out.println("Com " + getDerrotas() + " derrotas" );
-        System.out.println("Com " + getEmpates()+ " empates" );
-        System.out.println("E Com " + getEmpates() + " vitórias" );
+        System.out.println("Senhoras e Senhores!!! O lutador " + this.getNome() + " vai lutarr agora da categoria " + this.getCategoria());
+        System.out.println("Ele vemmm do(a)" + this.getNacionalidade() );
+        System.out.println("Pesa exatosss " +this.getPeso() + " Kilos");
+        System.out.println("Com " + this.getDerrotas() + " derrotas" );
+        System.out.println("Com " + this.getEmpates()+ " empates" );
+        System.out.println("E Com " + this.getEmpates() + " vitórias" );
 
     }
 
     public void status(){
-        System.out.println("Nome: " + getNome());
-        System.out.println("Idade: " + getIdade());
-        System.out.println("Altura: " + getAltura());
-        System.out.println("Peso: " + getPeso());
-        System.out.println("Categoria: " + getCategoria());
-        System.out.println("Vitorias: " + getVitorias());
-        System.out.println("Derrotas: " + getDerrotas());
-        System.out.println("Empates: " + getEmpates());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Idade: " + this.getIdade());
+        System.out.println("Altura: " + this.getAltura());
+        System.out.println("Peso: " + this.getPeso());
+        System.out.println("Categoria: " + this.getCategoria());
+        System.out.println("Vitorias: " + this.getVitorias());
+        System.out.println("Derrotas: " + this.getDerrotas());
+        System.out.println("Empates: " + this.getEmpates());
 
     }
 
     public void ganharLuta(boolean LutaVitoria){
-            setVitorias(getVitorias() + 1);
+            this.setVitorias(this.getVitorias() + 1);
         System.out.println(getNome() + " venceuu a luta!");
     }
 
     public void perderLutar(boolean LutaVitoria){
-            setDerrotas(getDerrotas() + 1);
+            this.setDerrotas(this.getDerrotas() + 1);
             System.out.println(getNome() + " perdeuu a luta!");
     }
 
     public void empatarLuta(){
-            setEmpates(getEmpates() + 1);
+        this.setEmpates(this.getEmpates() + 1);
             System.out.println("De " + getNome() + " e " + getNome()  + " a luta foi umm empatee!");
     }
 }
