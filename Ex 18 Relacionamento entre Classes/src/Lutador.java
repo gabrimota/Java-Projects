@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Lutador {
 
     private String nome;
@@ -68,6 +70,8 @@ public class Lutador {
             this.categoria = "Medio";
         } else if (getPeso() <= 120.3 ) {
             this.categoria = "Pesado";
+        } else if (getPeso() >= 120.3 ) {
+            this.categoria = "Exame médico";
         }
     }
 
@@ -112,6 +116,11 @@ public class Lutador {
 
     public void Apresentar(){
         System.out.println("Senhoras e Senhores!!! O lutador " + getNome() + " vai lutarr agora da categoria " + getCategoria());
+        System.out.println("Ele vemmm do(a)" + getVitorias() );
+        System.out.println("Com " + getDerrotas() + " derrotas" );
+        System.out.println("Com " + getEmpates()+ " empates" );
+        System.out.println("E Com " + getEmpates() + " vitórias" );
+
     }
 
     public void status(){
