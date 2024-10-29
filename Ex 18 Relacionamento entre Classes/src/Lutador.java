@@ -92,6 +92,8 @@ public class Lutador {
         nacionalidade = na ;
         idade = id;
         altura = al;
+//        Podemos fazer dessas 2 maneiras
+        setPeso(pe);
         categoria = ca;
         vitorias = vi;
         derrotas = de;
