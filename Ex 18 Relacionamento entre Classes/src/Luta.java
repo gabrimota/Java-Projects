@@ -41,13 +41,10 @@ public class Luta   {
     //Métodos /funções
 
     public void MarcarLutar(){
-            if(getAprovada()){
                 if(desafiante.getCategoria().equals(desafiado.getCategoria())){
-
-
-
+                } else if (desafiante != desafiado) {
+                    setAprovada(true);
                 }
-            }
     }
     public void Lutar() {
 
