@@ -1,5 +1,8 @@
 public class Luta   {
     private Lutador desafiado;
+    private Lutador desafiante;
+    private int rounds;
+    private boolean aprovada;
 
     public Lutador getDesafiante() {
         return desafiante;
@@ -25,7 +28,7 @@ public class Luta   {
         this.rounds = rou;
     }
 
-    public boolean isAprovada() {
+    public boolean getAprovada() {
         return aprovada;
     }
 
@@ -33,15 +36,18 @@ public class Luta   {
         this.aprovada = apro;
     }
 
-    private Lutador desafiante;
-    private int rounds;
-    private boolean aprovada;
 
 
     //Métodos /funções
 
     public void MarcarLutar(){
+            if(getAprovada()){
+                if(desafiante.getCategoria().equals(desafiado.getCategoria())){
 
+
+
+                }
+            }
     }
     public void Lutar() {
 
