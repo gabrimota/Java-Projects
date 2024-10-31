@@ -50,6 +50,8 @@ public class Luta   {
                     System.out.println("Luta entre" + l1.getNome() +" e "+ l2.getNome()+ " Aprovada!");
                 } else
                     setAprovada(false);
+                    desafiante = null;
+                    desafiado = null;
                     System.out.println("Luta reprovada, Lutadores são de categorias diferentes ou oponente é o mesmo");
     }
     public void Lutar() {
