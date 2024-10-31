@@ -44,7 +44,7 @@ public class Luta   {
                 if(desafiante.getCategoria().equals(desafiado.getCategoria())){
                 } else if (desafiante != desafiado) {
                     setAprovada(true);
-                    System.out.println("Luta entre" + getDesafiado() +" e "+ getDesafiante()+ " Aprovada!");
+                    System.out.println("Luta entre" + desafiante.getNome() +" e "+ desafiado.getNome()+ " Aprovada!");
                 }
     }
     public void Lutar() {
