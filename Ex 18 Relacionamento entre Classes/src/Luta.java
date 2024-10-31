@@ -67,7 +67,9 @@ public class Luta   {
             int ganhador = random.nextInt(10) + 1;
         if(ganhador % 2 == 0){
             System.out.println("Lutador 1 venceuuu!");
-        } else System.out.println("Lutador 2 venceuuuu!");
         }
+        else System.out.println("Lutador 2 venceuuuu!");
+        }
+        else System.out.println("A luta não pode acontecer");
     }
 }
