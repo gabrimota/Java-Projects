@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Luta   {
     private Lutador desafiado;
     private Lutador desafiante;
@@ -40,17 +42,17 @@ public class Luta   {
 
     //Métodos /funções
 
-    public void MarcarLutar(){
+    public void MarcarLutar( Lutador l1  , Lutador l2 ){
                 if( desafiado != desafiante && desafiante.getCategoria().equals(desafiado.getCategoria()) ){
                     setAprovada(true);
                     System.out.println("Luta entre" + desafiante.getNome() +" e "+ desafiado.getNome()+ " Aprovada!");
                 } else
                     setAprovada(false);
-                   System.out.println("Luta reprovada, Lutadores são de categorias diferentes ou oponente é o mesmo");
+                    System.out.println("Luta reprovada, Lutadores são de categorias diferentes ou oponente é o mesmo");
     }
     public void Lutar() {
         if(getAprovada()){
-
+            new Random();
         }
     }
 }
