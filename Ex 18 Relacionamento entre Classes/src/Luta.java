@@ -43,9 +43,11 @@ public class Luta   {
     //Métodos /funções
 
     public void MarcarLutar( Lutador l1  , Lutador l2 ){
-                if( desafiado != desafiante && desafiante.getCategoria().equals(desafiado.getCategoria()) ){
+                if( l1 != l2 && l1.getCategoria().equals(l2.getCategoria()) ){
                     setAprovada(true);
-                    System.out.println("Luta entre" + desafiante.getNome() +" e "+ desafiado.getNome()+ " Aprovada!");
+                    desafiado = l1;
+                    desafiante = l2;
+                    System.out.println("Luta entre" + l1.getNome() +" e "+ l2.getNome()+ " Aprovada!");
                 } else
                     setAprovada(false);
                     System.out.println("Luta reprovada, Lutadores são de categorias diferentes ou oponente é o mesmo");
