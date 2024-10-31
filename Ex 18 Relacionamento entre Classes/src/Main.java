@@ -17,6 +17,9 @@ public class Main {
 
         l[0].status();
 
+   Luta UEC01 = new Luta();
+
+   UEC01.MarcarLutar( l[0] , l[1]);
 
     }
 
