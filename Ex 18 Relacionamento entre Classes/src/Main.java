@@ -20,6 +20,7 @@ public class Main {
    Luta UEC01 = new Luta();
 
    UEC01.MarcarLutar( l[0] , l[1]);
+   UEC01.Lutar();
 
     }
 
