@@ -41,11 +41,12 @@ public class Luta   {
     //Métodos /funções
 
     public void MarcarLutar(){
-                if(desafiante.getCategoria().equals(desafiado.getCategoria())){
-                } else if (desafiante != desafiado) {
+                if( desafiado != desafiante && desafiante.getCategoria().equals(desafiado.getCategoria()) ){
                     setAprovada(true);
                     System.out.println("Luta entre" + desafiante.getNome() +" e "+ desafiado.getNome()+ " Aprovada!");
-                }
+                } else
+                    setAprovada(false);
+                   System.out.println("Luta reprovada, Lutadores são de categorias diferentes ou oponente é o mesmo");
     }
     public void Lutar() {
         if(getAprovada()){
