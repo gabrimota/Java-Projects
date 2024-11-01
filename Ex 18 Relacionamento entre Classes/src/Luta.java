@@ -80,12 +80,16 @@ public class Luta {
             switch (ganhador) {
                 case 0:
                     System.out.println("Lutador 1 venceuuu!");
-                        break;
+                        desafiado.ganharLuta(true);
+                            break;
                 case 1:
                     System.out.println("Lutador 2 venceuuuu!");
-                        break;
+                        desafiante.ganharLuta(true);
+                            break;
                 case 2:
                     System.out.println("Empatee!");
+                      desafiado.empatarLuta(true);
+                      desafiante.empatarLuta(true);
                         break;
             }
         } else System.out.println("A luta não foi aprovada");

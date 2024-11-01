@@ -144,7 +144,7 @@ public class Lutador {
             System.out.println(getNome() + " perdeuu a luta!");
     }
 
-    public void empatarLuta(){
+    public void empatarLuta(boolean LutaEmpate){
         this.setEmpates(this.getEmpates() + 1);
             System.out.println("De " + getNome() + " e " + getNome()  + " a luta foi umm empatee!");
     }
