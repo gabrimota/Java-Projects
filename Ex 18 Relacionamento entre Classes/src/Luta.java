@@ -65,13 +65,29 @@ public class Luta {
     public void Lutar() {
         if (getAprovada()) {
             Random random = new Random();
-            int ganhador = random.nextInt(10) ;
+//            Neste código não teriamos o empate, pois o resto da divisão sempre dara 1 ou 0
+//            O random.nextInt(10) gera um num aleatorio entre 0 e 9
+           /* int ganhador = random.nextInt(10) ;
             if (ganhador % 2 == 0) {
                 System.out.println("Lutador 1 venceuuu!");
 
             } else if (ganhador % 2 == 1) {
                 System.out.println("Lutador 2 venceuuuu!");
-            } else System.out.println("A luta empatou!");
+            } else System.out.println("A luta empatou!");*/
+
+//          gera um num aleatorio entre 0 e 2
+            int ganhador = random.nextInt(3) ;
+            switch (ganhador) {
+                case 0:
+                    System.out.println("Lutador 1 venceuuu!");
+                        break;
+                case 1:
+                    System.out.println("Lutador 2 venceuuuu!");
+                        break;
+                case 2:
+                    System.out.println("Empatee!");
+                        break;
+            }
         } else System.out.println("A luta não foi aprovada");
     }
 }
