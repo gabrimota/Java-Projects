@@ -65,13 +65,13 @@ public class Luta {
     public void Lutar() {
         if (getAprovada()) {
             Random random = new Random();
-            int ganhador = random.nextInt(10) + 2;
+            int ganhador = random.nextInt(10) ;
             if (ganhador % 2 == 0) {
                 System.out.println("Lutador 1 venceuuu!");
 
             } else if (ganhador % 2 == 1) {
                 System.out.println("Lutador 2 venceuuuu!");
             } else System.out.println("A luta empatou!");
-        }
+        } else System.out.println("A luta não foi aprovada");
     }
 }
