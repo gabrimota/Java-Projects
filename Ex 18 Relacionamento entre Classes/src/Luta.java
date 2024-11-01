@@ -81,10 +81,12 @@ public class Luta {
                 case 0:
                     System.out.println("Lutador 1 venceuuu!");
                         desafiado.ganharLuta(true);
+                        desafiante.perderLutar(true);
                             break;
                 case 1:
                     System.out.println("Lutador 2 venceuuuu!");
                         desafiante.ganharLuta(true);
+                        desafiado.perderLutar(true);
                             break;
                 case 2:
                     System.out.println("Empatee!");
