@@ -1,2 +1,1 @@
-# Rpg
-Projeto Inspirado em sistema de Rpg (batalha,classe,raças,poções,habilidades)
+# Projetos de Treino em Java
