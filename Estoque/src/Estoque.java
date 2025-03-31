@@ -27,9 +27,13 @@ public class Estoque {
     private void SetData(LocalDate data){
         this.data = data;
     }
+    private LocalDate GetData(){
+        return data;
+    }
 
+ public void TotalValorEstoque(){
 
-
+ }
 
 
 }
