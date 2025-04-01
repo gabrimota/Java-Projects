@@ -17,32 +17,38 @@ public class Estoque {
     private void SetNome(String nome) {
         this.nome = nome;
     }
+
     private String getNome() {
         return nome;
     }
-    private void SetQuantidade(int quantidade){
+
+    private void SetQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-    private int GetQuantidade(){
+
+    private int GetQuantidade() {
         return quantidade;
     }
-    private void SetPreco(Double preco){
+
+    private void SetPreco(Double preco) {
         this.preco = preco;
     }
-    private double GetPreco(){
+
+    private double GetPreco() {
         return preco;
     }
-    private void SetData(LocalDate data){
+
+    private void SetData(LocalDate data) {
         this.data = data;
     }
-    private LocalDate GetData(){
+
+    private LocalDate GetData() {
         return data;
     }
 
- public void TotalValorEstoque(){
+    public Double TotalValorEstoque() {
 
 
- }
-
-
+        return 0.0;
+    }
 }
