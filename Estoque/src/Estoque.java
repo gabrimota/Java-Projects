@@ -6,6 +6,14 @@ public class Estoque {
     private Double preco;
     LocalDate data = LocalDate.now();
 
+    public Estoque(String nome, int quantidade, double preco, LocalDate data) {
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.preco = preco;
+        this.data = data;
+    }
+
+
     private void SetNome(String nome) {
         this.nome = nome;
     }
@@ -32,6 +40,7 @@ public class Estoque {
     }
 
  public void TotalValorEstoque(){
+
 
  }
 
