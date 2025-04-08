@@ -6,7 +6,7 @@ public class Main {
 
     Estoque estoque1 = new Estoque("Fogão",2,1500.00,"02/03/2025" );
 
-
+    estoque1.Exibir();
 
     }
 }   

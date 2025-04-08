@@ -3,12 +3,23 @@ import java.time.LocalDate;
 // Importação do formatador de datas
 import java.time.format.DateTimeFormatter;
 
+// Criação da classe estoque )
 public class Estoque {
+//    Atributos da Classe
     private String nome;
     private int quantidade;
     private Double preco;
+// Aq estou utiliznado um tipo diferente (Data), para guardar a data de validade do produto
     LocalDate validade = LocalDate.now();
+// Função exibir para mostrar os valores do atributos do nosso objeto
+    public void Exibir(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Quantidade: " + quantidade);
+        System.out.println("Preco: " + preco);
+        System.out.printf("Validade: %s\n", validade.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
+    }
+//    Construtor do nosso objeto, ele que recebe as inf
     public Estoque(String nome, int quantidade, double preco, String validadeString) {
         this.nome = nome;
         this.quantidade = quantidade;
@@ -18,7 +29,7 @@ public class Estoque {
         this.validade = LocalDate.parse(validadeString, formatter);
     }
 
-
+// Getters e Setters de Cada Atribruto do objeto
     private void SetNome(String nome) {
         this.nome = nome;
     }
@@ -51,6 +62,7 @@ public class Estoque {
         return validade;
     }
 
+//     Funções do objeto
     public Double TotalValorEstoque() {
 
 
