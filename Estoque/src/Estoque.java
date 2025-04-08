@@ -1,16 +1,21 @@
+// Importação de bibliotecas para a utilização do tipo Data
 import java.time.LocalDate;
+// Importação do formatador de datas
+import java.time.format.DateTimeFormatter;
 
 public class Estoque {
     private String nome;
     private int quantidade;
     private Double preco;
-    LocalDate data = LocalDate.now();
+    LocalDate validade = LocalDate.now();
 
-    public Estoque(String nome, int quantidade, double preco, LocalDate data) {
+    public Estoque(String nome, int quantidade, double preco, String validadeString) {
         this.nome = nome;
         this.quantidade = quantidade;
         this.preco = preco;
-        this.data = data;
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        this.validade = LocalDate.parse(validadeString, formatter);
     }
 
 
@@ -38,12 +43,12 @@ public class Estoque {
         return preco;
     }
 
-    private void SetData(LocalDate data) {
-        this.data = data;
+    private void SetValidade(LocalDate data) {
+        this.validade = data;
     }
 
-    private LocalDate GetData() {
-        return data;
+    private LocalDate GetValidade() {
+        return validade;
     }
 
     public Double TotalValorEstoque() {
