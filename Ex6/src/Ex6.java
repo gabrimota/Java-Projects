@@ -20,7 +20,7 @@ public class Ex6 {
 		
 		// pegando a informaçao do salário
 		System.out.print("Digite o seu salário: ");
-		salario = scanner.nextDouble();
+    	salario = scanner.nextDouble();
 		
 		// utilizando estruturas condicionais para saber qual taxa deveremos aplicar no salario do usuario
 		if(salario < 1000) {
