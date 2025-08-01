@@ -37,7 +37,7 @@ public class Estoque {
         this.validade = LocalDate.parse(validadeString, formatter);
     }
 
-// Getters e Setters de Cada Atribruto do objeto
+// Getters ad Setters for atributs of objetc
     private void SetNome(String nome) {
         this.nome = nome;
     }
