@@ -11,77 +11,80 @@ import java.util.Scanner;
 public class Estoque {
 
 //    Atributos da Classe
-    private String nome;
-    private int quantidade;
-    private Double preco;
+    private String name;
+    private int quantity;
+    private Double price;
     Scanner sc = new Scanner(System.in);
 
 // Aq estou utiliznado um tipo diferente (Data), para guardar a data de validade do produto
-    LocalDate validade = LocalDate.now();
+    LocalDate vality = LocalDate.now();
 
 // Função exibir para mostrar os valores do atributos do nosso objeto
     public void Exibir(){
-        System.out.println("Nome: " + nome);
-        System.out.println("Quantidade: " + quantidade);
-        System.out.println("Preco: " + preco);
-        System.out.printf("Validade: %s\n", validade.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+        System.out.println("Name: " + name);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Price: " + price);
+        System.out.printf("Vality: %s\n", vality.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
     }
 
-//    Construtor do nosso objeto, ele que recebe as inf
-    public Estoque(String nome, int quantidade, double preco, String validadeString) {
-        this.nome = nome;
-        this.quantidade = quantidade;
-        this.preco = preco;
+//    Constructor do object, he receptiom the informations of the produts
+    public Estoque(String name, int quantity, double price, String ValidityString) {
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        this.validade = LocalDate.parse(validadeString, formatter);
+        this.vality = LocalDate.parse(ValidityString, formatter);
     }
 
 // Getters ad Setters for atributs of objetc
     private void SetNome(String nome) {
-        this.nome = nome;
+        this.name = nome;
     }
 
     private String getNome() {
-        return nome;
+        return name;
     }
 
-    private void SetQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    private void SetQuantity(int quantidade) {
+        this.quantity = quantidade;
     }
 
-    private int GetQuantidade() {
-        return quantidade;
+    private int GetQuantity() {
+        return quantity;
     }
 
-    private void SetPreco(Double preco) {
-        this.preco = preco;
+    private void SetPrice(Double preco) {
+        this.price = preco;
     }
 
-    private double GetPreco() {
-        return preco;
+    private double GetPrice() {
+        return price;
     }
 
-    private void SetValidade(LocalDate data) {
-        this.validade = data;
+    private void SetValidity(LocalDate data) {
+        this.vality = data;
     }
 
-    private LocalDate GetValidade() {
-        return validade;
+    private LocalDate GetValidity() {
+        return vality;
     }
 
 //     Funções do objeto
     public Double TotalValorEstoque() {
-         return this.quantidade * this.preco;
+         return this.quantity * this.price;
 
     }
 
-    public void AddProdutoEstoque(String resp) {
-        System.out.println("Deseja adicionar um produtos no estoque? ");
+    public void AddProdutoEstoque(String resp, int quantity) {
+        System.out.println("You want to add new product in the stock? ");
           resp = sc.nextLine();
              if(resp.equals("S") || resp.equals("s")) {
 
 
         }
+    }
+    public void RemoveProductStock(){
+
     }
 }
