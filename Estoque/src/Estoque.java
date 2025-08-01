@@ -20,15 +20,17 @@ public class Estoque {
     LocalDate vality = LocalDate.now();
 
 // Função exibir para mostrar os valores do atributos do nosso objeto
-    public void Exibir(){
+    public void ShowStockProduts(){
         System.out.println("Name: " + name);
         System.out.println("Quantity: " + quantity);
         System.out.println("Price: " + price);
         System.out.printf("Vality: %s\n", vality.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
     }
-
-//    Constructor do object, he receptiom the informations of the produts
+public void IsRotten(String ValidityString){
+        this.vality = LocalDate.parse(ValidityString, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+}
+//    Constructor do object, he reception the informations of the produts
     public Estoque(String name, int quantity, double price, String ValidityString) {
         this.name = name;
         this.quantity = quantity;
@@ -37,7 +39,7 @@ public class Estoque {
         this.vality = LocalDate.parse(ValidityString, formatter);
     }
 
-// Getters ad Setters for atributs of objetc
+// Getters ad Setters for attributes of object
     private void SetNome(String nome) {
         this.name = nome;
     }
@@ -70,17 +72,17 @@ public class Estoque {
         return vality;
     }
 
-//     Funções do objeto
-    public Double TotalValorEstoque() {
+//     Functions of the object
+    public Double TotalValueStock() {
          return this.quantity * this.price;
 
     }
 
-    public void AddProdutoEstoque(String resp, int quantity) {
+    public void AddProdutoStock(String resp, int quantity) {
         System.out.println("You want to add new product in the stock? ");
           resp = sc.nextLine();
              if(resp.equals("S") || resp.equals("s")) {
-
+                this.quantity += quantity;
 
         }
     }

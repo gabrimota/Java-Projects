@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Estoque estoque1 = new Estoque("Fogão",2,1500.00,"02/03/2025" );
-
-        estoque1.Exibir();
+        Estoque estoque1 = new Estoque("gás",2,200.00,"02/03/2025" );
+        estoque1.TotalValueStock();
+        estoque1.ShowStockProduts();
 
 
 
