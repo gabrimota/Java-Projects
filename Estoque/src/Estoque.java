@@ -78,6 +78,7 @@ public void IsRotten(String ValidityString){
         System.out.println("Total Value: " + total);
     }
 
+//This fuction have no sense
     public void AddProdutoStock(String resp, int quantity) {
         System.out.println("You want to add new product in the stock? ");
           resp = sc.nextLine();
@@ -86,7 +87,10 @@ public void IsRotten(String ValidityString){
 
         }
     }
+//    This fuction have no sense
     public void RemoveProductStock(){
 
     }
+//        sc.close();
+
 }
