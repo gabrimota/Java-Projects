@@ -24,7 +24,7 @@ public class Estoque {
         System.out.println("Name: " + name);
         System.out.println("Quantity: " + quantity);
         System.out.println("Price: " + price);
-        System.out.printf("Vality: %s\n", vality.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+        System.out.printf("Vality: %s\n", vality.format(DateTimeFormatter.ofPattern("dd/MM/yyyy \n")));
 
     }
 public void IsRotten(String ValidityString){
@@ -73,9 +73,9 @@ public void IsRotten(String ValidityString){
     }
 
 //     Functions of the object
-    public Double TotalValueStock() {
-         return this.quantity * this.price;
-
+    public void TotalValueStock() {
+        double total = this.GetQuantity() * this.GetPrice();
+        System.out.println("Total Value: " + total);
     }
 
     public void AddProdutoStock(String resp, int quantity) {
