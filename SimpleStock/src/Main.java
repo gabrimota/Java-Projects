@@ -19,8 +19,12 @@ public class Main {
         System.out.println("Product Quantity in stock: ");
         product1.ProductQuantity = sc.nextInt();
 
-        System.out.println("Name: " + product1.ProductName + ", Price: " + product1.ProductPrice + ", Quantity: " + product1.ProductQuantity);
+        product1.TotalValueInStock();
 
+
+        System.out.println("Name: " + product1.ProductName + ", Price: " + product1.ProductPrice + ", Quantity: " + product1.ProductQuantity);
+//        this command
+        System.out.println(product1.toString());
         sc.close();
     }
 }
