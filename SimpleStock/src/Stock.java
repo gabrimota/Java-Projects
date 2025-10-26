@@ -25,7 +25,7 @@ public void RemoveProducts(int Quantity){
 
 public String toString(){
 
-    return ProductName + ", $" + String.format("%.2f" , ProductPrice) +  ", " + ProductQuantity + " units, " + "Total Value: "+ String.format("$%.2f", TotalValueInStock());
+    return ProductName + ", $" + String.format("%.2f" , ProductPrice) +  ", " + ProductQuantity + " units in stock, " + "Total Value: "+ String.format("$%.2f", TotalValueInStock());
 
 }
 
