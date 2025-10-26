@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 public class Main {
@@ -11,7 +12,7 @@ public class Main {
         product1 = new Stock();
 
 
-        System.out.println("Enter Product Data: ");
+        System.out.println("Enter Product Data, ");
         System.out.println("Product Name: ");
         product1.ProductName = sc.nextLine();
         System.out.println("Product Price: ");
@@ -19,12 +20,17 @@ public class Main {
         System.out.println("Product Quantity in stock: ");
         product1.ProductQuantity = sc.nextInt();
 
-        product1.TotalValueInStock();
+        System.out.println("Product data: " + product1);
+
+        System.out.println("Enter the number of the products you want to add in stock: ");
+        int quantity = sc.nextInt();
+
+        product1.AddProducts(quantity);
+
+        System.out.println("Product data: " + product1);
 
 
-        System.out.println("Name: " + product1.ProductName + ", Price: " + product1.ProductPrice + ", Quantity: " + product1.ProductQuantity);
-//        this command
-        System.out.println(product1.toString());
+        //        this command
         sc.close();
     }
 }

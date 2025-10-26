@@ -12,9 +12,7 @@ public class Stock {
 
 
 public double TotalValueInStock(){
-    double valueProducts = ProductPrice * ProductQuantity;
-    System.out.println("Total Value in Stock: " + valueProducts);
-    return valueProducts;
+      return ProductPrice * ProductQuantity;
 }
     public void AddProducts(int Quantity){
     this.ProductQuantity += Quantity;
@@ -25,5 +23,10 @@ public void RemoveProducts(int Quantity){
     this.ProductQuantity -= Quantity;
 }
 
+public String toString(){
+
+    return ProductName + ", $" + String.format("%.2f" , ProductPrice) +  ", " + ProductQuantity + " units, " + "Total Value: "+ String.format("$%.2f", TotalValueInStock());
+
+}
 
 }
