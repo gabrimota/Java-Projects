@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-exercises.iml" filepath="$PROJECT_DIR$/.idea/Java-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleStock/SimpleStock.iml" filepath="$PROJECT_DIR$/SimpleStock/SimpleStock.iml" />
       <module fileurl="file://$PROJECT_DIR$/SquareArea/SquareArea.iml" filepath="$PROJECT_DIR$/SquareArea/SquareArea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rectangle/rectangle.iml" filepath="$PROJECT_DIR$/rectangle/rectangle.iml" />
     </modules>
   </component>
 </project>
